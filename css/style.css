@@ -1,11 +1,10 @@
 body {
-  font-family: Poppins;
-  display: block;
+  font-family: Poppins, sans-serif;
   color: #22343d;
-  background-color: #ffffff;
 }
+
 .container {
-  min-width: 1150px;
+  width: 1150px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -30,6 +29,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #22343d;
 }
 
 .title {
@@ -38,9 +38,6 @@ a {
   line-height: 1.8;
   letter-spacing: 0.01em;
   color: #22343d;
-}
-
-.subtitle {
 }
 
 .text {
@@ -55,45 +52,31 @@ a {
   font-size: 30px;
   line-height: 0.9;
   color: #173a56;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
+
 .logo img {
   width: 39px;
   height: 36px;
 }
 
 .btn {
-  font-weight: 700;
-  font-size: 16px;
+  text-align: center;
   color: #fff;
   border-radius: 4px;
   background-color: #02897a;
   border: none;
-  padding: 14px 32px;
   cursor: pointer;
-}
-
-.btn-header {
-  padding: 9px 24px;
 }
 
 /* header */
 
-.page-header {
-  padding: 19px 0;
-}
-.header-container {
+header .container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-.header-nav {
 }
 
 .nav-list {
@@ -103,52 +86,51 @@ a {
   margin-right: 73px;
 }
 
-.nav-item:first-child {
-}
-
-.nav-list:hover,
-.nav-list:active {
-}
-
-.nav-item {
-}
-
 .nav-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   color: #22343d;
   padding: 26px 0;
-  display: flex;
+  display: inline-flex;
 }
 
-.sign-in-btn {
+.nav-link.accent {
   font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  color: #173a56;
-  border: 1px solid #bcd0e5;
-  background-color: #ffffff;
 }
 
-.sign-up-btn {
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
-  background-color: #02897a;
-}
-
-.header-button {
+.header-btn-list {
   display: flex;
   align-items: center;
   gap: 21px;
 }
 
+.btn-header {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 9px 24px;
+}
+
+.btn-header.accent {
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+  background-color: #ffffff;
+}
+
 /* hero section */
 
 .hero-page {
-  padding: 112px 0;
+  margin-top: 25px;
   margin-bottom: 50px;
+}
+
+.hero-page .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  padding: 112px 0;
 }
 
 .hero-title {
@@ -174,26 +156,29 @@ a {
   margin-right: 30px;
 }
 
-.hero-btn-video {
+.hero-link-btn {
   font-weight: 600;
   font-size: 16px;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: #02897a;
   padding: 15px 0;
 }
 
+.hero-link-btn img {
+  margin-right: 8px;
+  width: 20;
+}
+
 /* Product  was Built Specifically for You */
 
-.features {
+.features-page {
   padding: 50px 0;
 }
 
 .features-title {
-  font-weight: 700;
-  font-size: 32px;
   text-align: center;
-  color: #22343d;
+  max-width: 539px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -213,6 +198,24 @@ a {
 }
 
 .features-btn {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 32px;
   display: block;
   margin: 0 auto;
+}
+
+/* Key Benefits of Our Solution */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

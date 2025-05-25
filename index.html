@@ -21,48 +21,55 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-header">
-      <div class="container header-container">
+    <header>
+      <div class="container">
         <a class="logo header-logo" href="./index.html">
           <img src="./images/logo.png" alt="logo" />Product
         </a>
 
-        <nav class="header-nav">
+        <nav>
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="">Product</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Pricing</a></li>
-            <li class="nav-item">
+            <li>
+              <a class="nav-link accent" href="">Product</a>
+            </li>
+            <li><a class="nav-link" href="">Pricing</a></li>
+            <li>
               <a class="nav-link" href="">Customers</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link" href="">Resources</a>
             </li>
           </ul>
         </nav>
-        <div class="header-button">
-          <button class="btn btn-header sign-in-btn" type="button">
-            Sign In
-          </button>
-          <button class="btn btn-header sign-up-btn" type="button">
-            Sign Up
-          </button>
-        </div>
+        <ul class="header-btn-list">
+          <li>
+            <button class="btn btn-header accent" type="button">Sign In</button>
+          </li>
+          <li>
+            <button class="btn btn-header" type="button">Sign Up</button>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- hero section -->
       <section class="hero-page">
         <div class="container">
-          <h1 class="hero-title">Work at the speed of thought</h1>
-          <p class="text hero-text">
-            Tools, tutorials, design and innovation experts, all in one place!
-            The most intuitive way to imagine your next user experience.
-          </p>
-          <button class="btn hero-btn" type="button">Get started</button>
-          <a class="hero-btn-video" href=""
-            ><img src="./images/Triangle-6.png" alt="Triangle" />Watch the
-            Video</a
-          >
+          <div class="hero-content">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="text hero-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <button class="btn hero-btn" type="button">Get started</button>
+            <a class="hero-link-btn" href=""
+              ><img src="./images/Triangle-6.png" alt="Triangle" />Watch the
+              Video</a
+            >
+          </div>
+          <div class="hero-img-content">
+            <img src="./images/hero-img.png" alt="" />
+          </div>
         </div>
       </section>
 
@@ -114,7 +121,7 @@
       <!-- Key Benefits of Our Solution -->
       <section class="benefits-page">
         <div class="container">
-          <h2 hidden>Key Benefits of Our Solution</h2>
+          <h2 class="visually-hidden">Key Benefits of Our Solution</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
               <h3 class="section-title benefits-title">
